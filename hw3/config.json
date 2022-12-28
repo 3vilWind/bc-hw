@@ -1,0 +1,23 @@
+{
+  "nodeUrl": "wss://eth-mainnet.g.alchemy.com/v2/YOUR_KEY",
+  "feeds": [
+    {
+      "name": "ETH/USD",
+      "address": "0x37bc7498f4ff12c19678ee8fe19d713b87f6a9e6",
+      "decimalPoint": 8,
+      "fractionDigits": 2
+    },
+    {
+      "name": "LINK/ETH",
+      "address": "0xbba12740de905707251525477bad74985dec46d2",
+      "decimalPoint": 18,
+      "fractionDigits": 10
+    },
+    {
+      "name": "USDT/ETH",
+      "address": "0x7de0d6fce0c128395c488cb4df667cdbfb35d7de",
+      "decimalPoint": 18,
+      "fractionDigits": 9
+    }
+  ]
+}
