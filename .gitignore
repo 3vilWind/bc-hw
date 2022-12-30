@@ -104,3 +104,13 @@ dist
 .tern-port
 
 .idea/
+
+coverage.json
+typechain
+typechain-types
+
+# Hardhat files
+cache
+artifacts
+
+target/
