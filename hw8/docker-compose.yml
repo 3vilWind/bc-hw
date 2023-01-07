@@ -1,0 +1,19 @@
+services:
+  ipfs:
+    build: ./frontend
+    volumes:
+      - ipfs_data:/data/ipfs
+      - ipfs_export:/export
+    ports:
+      - 4001:4001
+      - 5001:5001
+      - 8080:8080
+
+  ethereum_node:
+    build: ./node
+    ports:
+      - 8545:8545
+
+volumes:
+  ipfs_data:
+  ipfs_export:

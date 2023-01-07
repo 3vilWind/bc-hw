@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Storage</title>
+    <script type="module" src="/src/main.ts"></script>
+</head>
+<body>
+<section class="hero is-primary">
+    <div class="hero-body">
+        <p class="title">
+            Storage DAPP
+        </p>
+        <p class="subtitle">
+            Upload you jpeg into ipfs, save in blockchain
+        </p>
+    </div>
+</section>
+
+<div class="columns box">
+    <div class="column box is-4">
+        <div class="field">
+            <label class="label">IPFS ADMIN URL</label>
+            <div class="control">
+                <input id="ipfs-admin-url" class="input" type="text">
+            </div>
+        </div>
+        <div class="field">
+            <label class="label">ETHEREUM NODE URL</label>
+            <div class="control">
+                <input id="eth-node-url" class="input" type="text">
+            </div>
+        </div>
+        <div class="field">
+            <label class="label">PRIVATE KEY</label>
+            <div class="control">
+                <input id="private-key" class="input" type="password">
+            </div>
+        </div>
+        <div class="field">
+            <label class="label">CONTRACT ADDRESS</label>
+            <div class="control">
+                <input id="contract-address" class="input" type="text">
+            </div>
+        </div>
+        <div class="control">
+            <button id="update-btn" class="button is-link">Update</button>
+        </div>
+    </div>
+    <div class="column box is-6">
+        <h2 id="msg" class="title">You don't have jpeg, upload it now!</h2>
+        <div class="columns is-centered">
+            <div class="column is-6">
+                <!--            <div class="column is-one-quarter">-->
+                <figure id="jpeg-place" class="image"></figure>
+                <!--            </div>-->
+            </div>
+        </div>
+    </div>
+    <div class="column box is-2">
+        <form>
+            <div class="file">
+                <label class="file-label">
+                    <input id="jpeg-input" class="file-input" type="file">
+                    <span class="file-cta">
+                  <span class="file-label">
+                    Choose a file…
+                  </span>
+                </span>
+                </label>
+            </div>
+        </form>
+    </div>
+</div>
+</body>
+</html>
